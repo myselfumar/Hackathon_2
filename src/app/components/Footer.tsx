@@ -188,9 +188,9 @@ export const Footer = () => {
             <div className="flex-grow-0 flex-shrink-0 w-[321px] h-[87px] relative">
               <div className="w-[321px] h-[58px] absolute left-0 top-0 overflow-hidden">
                 <div className="w-[321px] h-[58px] absolute left-0 top-0 overflow-hidden rounded-[5px] bg-[#f9f9f9] border border-[#e6e6e6]">
-                  <p className="absolute left-5 top-[15px] text-sm text-left text-neutral-500">
-                    Your Email
-                  </p>
+                  <input type=' email' className="absolute left-5 top-[15px] text-sm text-left text-neutral-500" placeholder=' Your Email'/>
+                   
+                  
                 </div>
                 <div className="w-[117px] h-[58px] absolute left-[204px] top-0 overflow-hidden">
                   <div className="w-[117px] h-[58px] absolute left-0 top-0 overflow-hidden rounded-tr-[5px] rounded-br-[5px] bg-[#23a6f0] border border-[#e6e6e6]">

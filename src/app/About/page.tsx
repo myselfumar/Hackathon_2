@@ -117,6 +117,7 @@ const About =() => {
                   Contact
                 </p>
                 </Link>
+               
               </div>
             </div>
           </div>
@@ -133,9 +134,11 @@ const About =() => {
             <div className="flex-grow-0 flex-shrink-0 w-[214px] h-[52px] relative overflow-hidden">
               <div className="flex justify-start items-center absolute left-0 top-0 overflow-hidden gap-[15px] px-[25px] py-[15px] rounded-[5px] bg-[#23a6f0]">
                 <Link href="Become a member">
+                <Link href="Team1">
                 <p className="flex-grow-0 flex-shrink-0 text-sm font-bold text-left text-white">
                   Become a member
                 </p>
+                </Link>
                 </Link>
                 <svg
                   width={12}
@@ -768,7 +771,7 @@ const About =() => {
   <div className="w-[1440px] h-[636px] absolute left-0 top-[3298px] overflow-hidden bg-[#2a7cc7]">
     <div className="w-[1440px] h-[637px] absolute left-0 top-0 overflow-hidden">
       <img
-        src="unsplash:vjmgquks8q8.jpeg"
+        src="6.png"
         className="w-[590px] h-[640px] absolute left-[849px] top-[-1px] object-cover"
       />
     </div>

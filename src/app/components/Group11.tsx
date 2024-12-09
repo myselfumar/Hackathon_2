@@ -11,9 +11,10 @@ export const Group11 = () => {
         <div className="w-[704px] h-[682px] absolute left-0 top-0 overflow-hidden">
           <div className="w-[632px] h-[491.99px] absolute left-9 top-[117px]">
             <img
-              src="hhhh.jpeg"
-              className="w-[725px] h-[774px] absolute left-[-137.85px] top-[-211.85px] object-cover"
-            />
+
+              src="2.png"
+              className="w-[725px] h-[774px] absolute left-[-137.85px] top-[-211.85px] object-cover"/>
+              
           </div>
         </div>
       </div>

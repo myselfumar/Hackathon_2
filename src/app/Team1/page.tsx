@@ -166,27 +166,27 @@ const Pricing =() => {
   </div>
 </div>
 <div className="flex-grow-0 flex-shrink-0 w-[1440px] h-[530px]">
-  <div className="w-[1440px] h-[530px] absolute left-0 top-96 overflow-hidden bg-white">
+  <div className="w-[1440px] h-[530px] absolute left-o top-96 overflow-hidden bg-white">
     <div className="w-[1440px] h-[530px] absolute left-0 top-0 overflow-hidden">
       <div className="w-[1440px] h-[530px] absolute left-0 top-0 overflow-hidden">
         <img
-          src="unsplash:lks7vei-eag.jpeg"
+          src="a.jpeg"
           className="w-[700px] h-[530px] absolute left-[-1px] top-[-1px] object-cover"
         />
         <img
-          src="unsplash:gmsnxqiljp4.jpeg"
+          src="e.jpeg"
           className="w-[361px] h-[260px] absolute left-[1069px] top-[-1px] object-cover"
         />
         <img
-          src="unsplash:1-aa2fadydc.jpeg"
+          src="2.jpeg"
           className="w-[361px] h-[260px] absolute left-[1069px] top-[269px] object-cover"
         />
         <img
-          src="unsplash:psmddexaewe.jpeg"
+          src="2.jpeg"
           className="w-[361px] h-[260px] absolute left-[1439px] top-[-1px] object-cover"
         />
         <img
-          src="unsplash:mcsdtbwxuzu.jpeg"
+          src="2.jpeg"
           className="w-[361px] h-[260px] absolute left-[1439px] top-[269px] object-cover"
         />
       </div>

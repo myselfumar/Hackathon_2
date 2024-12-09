@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from "next/link";
 
 export const Group10 = () => {
   return (
@@ -20,17 +21,21 @@ export const Group10 = () => {
               <div className="flex justify-start items-center flex-grow-0 flex-shrink-0 relative gap-[34px]">
                 <p className="flex-grow-0 flex-shrink-0 text-2xl font-bold text-center text-white">
                   $16.48
+                
                 </p>
                 <div className="flex flex-col justify-start items-center flex-grow-0 flex-shrink-0 relative overflow-hidden gap-2.5 px-10 py-[15px] rounded-[5px] bg-[#2dc071]">
+                  <Link href="Product1">
                   <p className="flex-grow-0 flex-shrink-0 text-sm font-bold text-center text-white">
                     ADD TO CART
                   </p>
+                  </Link>
+                  
                 </div>
               </div>
             </div>
             <div className="flex flex-col justify-start items-center flex-grow-0 flex-shrink-0 w-[510px] relative overflow-hidden">
               <img
-                src="shop2.jpeg"
+                src="3.png"
                 className="flex-grow-0 flex-shrink-0 w-[443px] h-[685px] object-cover"
               />
             </div>
