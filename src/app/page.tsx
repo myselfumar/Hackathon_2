@@ -1,4 +1,4 @@
-import Navbar from "./components/Navbar"
+import {Navbar} from "./components/Navbar"
 import  Header  from "./components/Header";
 import Group from "./components/Group";
 import Group9 from "./components/Group9";

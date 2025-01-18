@@ -1,51 +1,33 @@
-import React from 'react'
+import Image from "next/image";
 
-export const Header = () => {
+export default function Header() {
   return (
-    <div className="w-[1436px] h-[716px]">
-  <div className="w-[1436px] h-[716px]">
-    <div className="w-[1436px] h-[716px] absolute left-px top-[136px] rounded-[5px] bg-white border border-[#dedede]">
-      <div className="w-[1436px] h-[716px] absolute left-0 top-0 overflow-hidden">
-        <div className="w-[1440px] h-[716px] absolute left-0 top-0 overflow-hidden">
-          <img
-          src='shop1.jpeg'
-           className="w-[1440px] h-[716px] absolute left-0 top-0 overflow-hidden bg-cover bg-no-repeat bg-center" />
-          <div className="flex flex-col justify-start items-center absolute left-[197.5px] top-12 overflow-hidden gap-20 py-28">
-            <div className="flex justify-start items-center flex-grow-0 flex-shrink-0 overflow-hidden gap-[30px] py-12">
-              <div className="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 w-[599px] relative overflow-hidden gap-[35px]">
-                <p className="flex-grow-0 flex-shrink-0 text-base font-bold text-left text-white">
-                  SUMMER 2020
-                </p>
-                <p className="flex-grow-0 flex-shrink-0 text-[58px] font-bold text-left text-white">
-                  NEW COLLECTION
-                </p>
-                <p className="flex-grow-0 flex-shrink-0 text-xl text-left text-neutral-50">
-                  <span className="flex-grow-0 flex-shrink-0 text-xl text-left text-neutral-50">
-                    We know how large objects will act,{" "}
-                  </span>
-                  <br />
-                  <span className="flex-grow-0 flex-shrink-0 text-xl text-left text-neutral-50">
-                    but things on a small scale.
-                  </span>
-                </p>
-                <div className="flex justify-start items-start flex-grow-0 flex-shrink-0 gap-2.5">
-                  <div className="flex flex-col justify-start items-center flex-grow-0 flex-shrink-0 relative overflow-hidden gap-2.5 px-10 py-[15px] rounded-[5px] bg-[#2dc071]">
-                    <p className="flex-grow-0 flex-shrink-0 text-2xl font-bold text-center text-white">
-                      SHOP NOW
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="flex flex-col justify-start items-start flex-grow-0 flex-shrink-0 w-[415px] h-[280px] overflow-hidden" />
-            </div>
+    <section className="relative overflow-hidden bg-[#00C1FD]">
+      <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2 px-4 md:px-6 lg:px-8 py-8 md:py-12">
+        <div className="flex flex-col justify-center">
+          <p className="mb-4 text-sm font-bold uppercase tracking-wider text-white">
+            Summer 2020
+          </p>
+          <h1 className="mb-6 text-4xl md:text-5xl font-bold text-white lg:text-6xl">
+            NEW COLLECTION
+          </h1>
+          <p className="mb-8 max-w-md text-base md:text-lg text-white/90">
+            We know how large objects will act, but things on a small scale.
+          </p>
+          <div>
+            <button className="rounded bg-[#2DC071] px-6 md:px-8 lg:px-10 py-2 md:py-3 font-bold text-white transition-colors hover:bg-[#2DC071]/90">
+              SHOP NOW
+            </button>
           </div>
         </div>
+        <div className="relative hidden lg:block">
+          <Image
+            src="shop1.jpeg"
+            alt="Fashion model with shopping bags"
+            className="h-full w-full object-cover"
+          />
+        </div>
       </div>
-      <div className="w-6 h-[44.47px] absolute left-[1381px] top-[283px] overflow-hidden" />
-    </div>
-  </div>
-</div>
-  )
+    </section>
+  );
 }
-
-export default Header;
