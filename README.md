@@ -1,3 +1,7 @@
+# Day 3 Hackathon
+Open [Hackathon_Day3_Task_Completion](Hackathon_Day3_Task_Completion.pdf)
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started

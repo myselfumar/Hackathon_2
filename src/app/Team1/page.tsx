@@ -10,72 +10,72 @@ const teamMembers = [
     id: 1,
     name: "Sarah Doe",
     role: "Design Lead",
-    image: "/team/member1.jpg",
+    image: "/team1.jpeg",
     bgColor: "bg-red-100",
   },
   {
     id: 2,
     name: "John Smith",
     role: "Developer",
-    image: "/team/member2.jpg",
+    image: "/team2.jpeg",
     bgColor: "bg-blue-100",
   },
   {
     id: 3,
     name: "Emma Wilson",
     role: "Marketing",
-    image: "/team/member3.jpg",
+    image: "/team3.jpeg",
     bgColor: "bg-yellow-100",
   },
   {
     id: 4,
     name: "Michael Brown",
     role: "Product Manager",
-    image: "/team/member4.jpg",
+    image: "/team4.jpeg",
     bgColor: "bg-purple-100",
   },
   {
     id: 5,
     name: "Lisa Anderson",
     role: "UX Designer",
-    image: "/team/member5.jpg",
+    image: "/team5.jpeg",
     bgColor: "bg-pink-100",
   },
   {
     id: 6,
     name: "David Lee",
     role: "Frontend Developer",
-    image: "/team/member6.jpg",
+    image: "/team6.jpeg",
     bgColor: "bg-orange-100",
   },
   {
     id: 7,
     name: "Rachel Green",
     role: "Content Writer",
-    image: "/team/member7.jpg",
+    image: "/team/team7.jpeg",
     bgColor: "bg-green-100",
   },
   {
     id: 8,
     name: "James Wilson",
     role: "Backend Developer",
-    image: "/team/member8.jpg",
+    image: "/team/team8.jpeg",
     bgColor: "bg-indigo-100",
   },
   {
     id: 9,
     name: "Sophie Turner",
     role: "UI Designer",
-    image: "/team/member9.jpg",
+    image: "/team/team9.jpeg",
     bgColor: "bg-teal-100",
   },
 ]
 
 const galleryImages = [
-  { src: "/gallery/image1.jpg", width: 600, height: 800 },
-  { src: "/gallery/image2.jpg", width: 400, height: 600 },
-  { src: "/gallery/image3.jpg", width: 400, height: 600 },
-  { src: "/gallery/image4.jpg", width: 400, height: 600 },
+  { src: "/a.jpeg", width: 600, height: 800 },
+  { src: "/b.jpeg", width: 400, height: 600 },
+  { src: "/c.jpeg", width: 400, height: 600 },
+  { src: "/2.jpeg", width: 400, height: 600 },
 ]
 
 export default function TeamPage() {
@@ -97,7 +97,7 @@ export default function TeamPage() {
               }`}
             >
               <Image
-                src={`/placeholder.svg?height=${image.height}&width=${image.width}`}
+                src={`/team/${index + 1}.jpeg`}
                 alt={`Gallery image ${index + 1}`}
                 width={image.width}
                 height={image.height}
@@ -119,7 +119,7 @@ export default function TeamPage() {
             >
               <div className={`relative aspect-[4/5] ${member.bgColor}`}>
                 <Image
-                  src={`/placeholder.svg?height=600&width=480`}
+                 src={`/team/team${member.id}.jpeg`}
                   alt={member.name}
                   fill
                   className="object-cover object-center transition-transform duration-300 group-hover:scale-105"

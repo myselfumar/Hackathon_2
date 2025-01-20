@@ -3,16 +3,18 @@ import Image from "next/image";
 import { Star, ChevronLeft, ChevronRight } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 const categories = [
-  { name: "Casual", image: "/categories/casual.jpg" },
-  { name: "Formal", image: "/categories/formal.jpg" },
-  { name: "Sport", image: "/categories/sport.jpg" },
-  { name: "Summer", image: "/categories/summer.jpg" },
-  { name: "Winter", image: "/categories/winter.jpg" },
+  { name: "Casual", image: "/abc1.png" },
+  { name: "Formal", image: "/abc2.png" },
+  { name: "Sport", image: "/abc3.png" },
+  { name: "Summer", image: "/abc4.png" },
+  { name: "Winter", image: "/abc5.png" },
 ];
 
-const brands = ["hooli", "lyft", "stripe", "aws", "reddit"];
+const brands = ["hooli", "lyft", "stripe2", "aws", "reddit"];
 
 const products = [
   {
@@ -25,7 +27,7 @@ const products = [
   },
   {
     id: 2,
-    name: "Women's Fashion Sweater",
+    name: "Fashion Product Item",
     price: 39.99,
     rating: 5,
     colors: ["#23A6F0", "#2DC071"],
@@ -49,6 +51,8 @@ export default function ProductListing() {
   const currentPage = 1; // Hardcoded for now; you can add state to control this.
 
   return (
+    <>
+    <Navbar />
     <div className="min-h-screen bg-white">
       {/* Category Banner */}
       <section className="border-b">
@@ -58,7 +62,7 @@ export default function ProductListing() {
               <div key={index} className="shrink-0">
                 <div className="relative h-32 w-32 overflow-hidden rounded-lg">
                   <Image
-                    src={category.image || "/placeholder.svg"}
+                    src={category.image || "/"}
                     alt={category.name}
                     width={128}
                     height={128}
@@ -79,11 +83,11 @@ export default function ProductListing() {
             {brands.map((brand, index) => (
               <Image
                 key={index}
-                src={`/brands/${brand}.svg`}
+                src={`/logo/${brand}.png`}
                 alt={`${brand} logo`}
-                width={100}
-                height={32}
-                className="h-8 w-auto opacity-60 grayscale transition-all hover:opacity-100 hover:grayscale-0"
+                width={200}
+                height={48}
+                className="h-24 w-auto opacity-60 grayscale transition-all hover:opacity-100 hover:grayscale-0"
               />
             ))}
           </div>
@@ -186,5 +190,7 @@ export default function ProductListing() {
         </div>
       </section>
     </div>
+    < Footer/>
+    </>
   );
 }

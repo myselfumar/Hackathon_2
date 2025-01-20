@@ -22,8 +22,11 @@ export default function Header() {
         </div>
         <div className="relative hidden lg:block">
           <Image
-            src="shop1.jpeg"
+            src="/shop1.jpeg" // Corrected path
             alt="Fashion model with shopping bags"
+            layout="responsive" // Responsive layout
+            width={16}
+            height={9}
             className="h-full w-full object-cover"
           />
         </div>
