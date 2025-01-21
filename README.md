@@ -1,5 +1,10 @@
 # Day 3 Hackathon
+open [Hackathon_Day_2_Task_completion](Documentation/Day_2_Marketplace_Technical_Foundation.pdf)
 Open [Hackathon_Day3_Task_Completion](Hackathon_Day3_Task_Completion.pdf)
+open [Hackathon_Day4_Task_Completion](Hackathon_2\my-app\Documentation\Day_4_Dynamic_Frontend_Components.pdf)
+open [Hackathon_Day5_Task_Completion](Hackathon_2\my-app\Documentation\Day5_Testing_Refinement.pdf)
+open [Hackathon_Day6_Task_Completion](Hackathon_2\my-app\Documentation\Day_6_Deployment_Staging_Document.pdf)
+
 
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
